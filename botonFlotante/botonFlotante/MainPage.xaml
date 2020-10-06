@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="botonFlotante.MainPage">
+
+    <AbsoluteLayout>
+        <ScrollView 
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="SizeProportional">
+            
+        </ScrollView>
+        <!-- Buttons that can be modified. Change the Padding value to resize icons. -->
+        <ImageButton
+            x:Name="btn1"
+            AbsoluteLayout.LayoutBounds="0.915,0.8,50,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="#b52d50"
+            CornerRadius="40"
+            HeightRequest="80"
+            IsVisible="false"
+            Source="twitter.png"
+            WidthRequest="80"
+            Clicked="btn1_Clicked"/>
+        <ImageButton
+            x:Name="btn2"
+            AbsoluteLayout.LayoutBounds="0.915,0.7,50,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="#b52d50"
+            CornerRadius="40"
+            HeightRequest="80"
+            IsVisible="false"
+            Source="facebook.png"
+            Padding="11"
+            WidthRequest="80"
+            Clicked="Btn2_Clicked"/>
+        <ImageButton
+            x:Name="btn3"
+            AbsoluteLayout.LayoutBounds="0.915,0.6,50,50"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="#b52d50"
+            CornerRadius="40"
+            HeightRequest="80"
+            IsVisible="false"
+            Source="instagram.png"
+            Padding="10"
+            WidthRequest="80"
+            Clicked="Btn3_Clicked"/>
+        
+        <!-- Share button -->
+        <ImageButton
+            AbsoluteLayout.LayoutBounds="0.95,0.95,80,80"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            BackgroundColor="#b52d50"
+            CornerRadius="40"
+            HeightRequest="80"
+            Source="share.png"
+            Padding="12, 15, 15, 15"
+            WidthRequest="80"
+            Clicked="ImageButton_Clicked"/>
+    </AbsoluteLayout>
+</ContentPage>
